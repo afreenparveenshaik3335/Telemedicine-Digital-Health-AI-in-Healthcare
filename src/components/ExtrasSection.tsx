@@ -170,7 +170,7 @@ export const ExitIntentPopup = () => {
             <button onClick={close} className="absolute top-4 right-4 text-gray-400 hover:text-gray-700 transition-colors">
               <X className="w-5 h-5" />
             </button>
-            <h3 className="text-xl font-bold mb-2 text-gray-900">Wait — Don't Miss ICHMP 2026!</h3>
+            <h3 className="text-xl font-bold mb-2 text-gray-900">Wait — Don't Miss IC-TDHAIH 2026 2026!</h3>
             <p className="text-sm text-gray-500 mb-6">Register your interest in 30 seconds and we'll send you full details.</p>
             <form onSubmit={(e) => { e.preventDefault(); close(); document.getElementById("registration")?.scrollIntoView({ behavior: "smooth" }); }}
               className="space-y-3">

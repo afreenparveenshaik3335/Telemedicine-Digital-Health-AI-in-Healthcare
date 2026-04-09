@@ -58,7 +58,7 @@ const AboutSection = () => {
         <motion.div initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }}
           className="text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-extrabold mb-4 text-gray-900">
-            About <span className="text-gradient-blue">IC-TDHAH 2026</span>
+            About <span className="text-gradient-blue">IC-TDHAIH 2026</span>
           </h2>
           <p className="text-gray-500 text-base max-w-2xl mx-auto">
             Advancing Telemedicine, Digital Health & AI in Healthcare for a healthier tomorrow

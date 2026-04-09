@@ -5,16 +5,20 @@ import logo from "@/assets/logo.png";
 
 /* Healthcare/Medical professionals - Clear high-quality image */
 const HERO_BG = "https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=3840&q=100%22;"
-/* ── Countdown Timer (counts to midnight today) ── */
+/* ── Countdown Timer (counts to event start) ── */
 const CountdownTimer = () => {
   const [time, setTime] = useState({ hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
+    const eventDate = new Date("2026-05-20T08:00:00+05:30");
+
     const tick = () => {
       const now = new Date();
-     const TEN_MIN = 10 * 60 * 1000;
-const diff = TEN_MIN - (now.getTime() % TEN_MIN);
-      if (diff <= 0) return;
+      const diff = eventDate.getTime() - now.getTime();
+      if (diff <= 0) {
+        setTime({ hours: 0, minutes: 0, seconds: 0 });
+        return;
+      }
       setTime({
         hours: Math.floor(diff / 3600000),
         minutes: Math.floor((diff / 60000) % 60),
